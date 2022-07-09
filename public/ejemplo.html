@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clase1
+        {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button  id="btnPrueba"> Prueba</button> >
+    <input id="input1" type="text" value="50">
+
+    <div class="clase1">Caja1 </div>
+    <div class="clase1">Caja2 </div>
+
+    <script>
+        let tag = document.getElementById("btnPrueba")
+        let input1= document.getElementById("input1")
+       // console.log(tag.innerHTML)
+       // console.log(input1.value)
+        let clas1 = document.getElementsByClassName("clase1")
+        //console.log(clas1[1])
+        clas1[0].style.backgroundColor = "blue"
+        console.log(document.querySelector(".clase1"))
+        btnPrueba.addEventListener('mouseover', (e) => {
+            alert("Evento")
+        })
+        
+    </script>
+</body>
+</html>
