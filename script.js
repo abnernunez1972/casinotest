@@ -4,8 +4,8 @@
   const wheel = document.querySelector('.wheel');
   const startButton = document.querySelector('.button');
   const back= document.querySelector('.back')
-  let deg = 0;
-  let ganador ;
+  var deg = 0;
+  var ganador ;
 
   //startButton.addEventListener('click', () => {
     // Disable button during spin
@@ -305,9 +305,7 @@
       element.classList.add("green");
       ganador = "verde";
     }
-    console.log('Puntero Gradiente Actual : ' + actualDeg);
-    console.log('El numero Ganador es : ' + ganador);
-  
+    
      }
   );
 })();
