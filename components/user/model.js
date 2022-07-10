@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const mySchema = new Schema({
    //
-   name: {
+   jugador: {
       type: String,
       required: true,
       

@@ -25,6 +25,17 @@
 </head>
 
 <body>
+  h1 id="result" ></h1>
+    <div id="app">
+      <img class="marker" src="marker.png" />  <span id="result" ></span>
+      <img class="wheel" src="whel.png" />
+      <button class="button" src="button.png"></button>
+    
+    </div>
+
+
+    
+    <script src="script.js"></script>
   <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
     <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"> Crear Jugador </button>
     <table id="articulos" class="table mt-2 table-bordered tabled-strioed">
@@ -57,24 +68,24 @@
         <div class="modal-body">
           <form>
             <div class="mb-3">
-              <label for="Nombre del Jugador" class="col-form-label">Jugador:</label>
-              <input type="text" class="form-control" id="jugador">
+              <label for="jugador" class="col-form-label">Jugador:</label>
+              <input id="jugador" type="text" class="form-control" >
             </div>
             <div class="mb-3">
-              <label for="Saldo Disponible" class="col-form-label">Saldo:</label>
-              <input type="number" class="form-control" id="saldo">
+              <label for="saldo" class="col-form-label">Saldo:</label>
+              <input id="saldo" type="number" class="form-control" >
             </div>
             <div class="mb-3">
-              <label for="Monto de la Apuesta" class="col-form-label">Apuesta:</label>
-              <input type="number" class="form-control" id="apuesta">
+              <label for="montoApuesta" class="col-form-label">Apuesta:</label>
+              <input id="montoApuesta" type="number" class="form-control" >
             </div>
             <div class="mb-3">
-              <label for="% de la Apuestas" class="col-form-label">% Apuesta:</label>
-              <input type="number" class="form-control" id="porcentajeApuesta">
+              <label for="porcentajeApuesta" class="col-form-label">% Apuesta:</label>
+              <input id="porcentajeApuesta" type="number" class="form-control" >
             </div>
             <div class="mb-3">
-              <label for="Color de la Apuesta" class="col-form-label">Color Apuesta:</label>
-              <input type="text" class="form-control" id="colorApuesta">
+              <label for="colorApuesta" class="col-form-label">Color Apuesta:</label>
+              <input id = "colorApuesta" type="text" class="form-control">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
