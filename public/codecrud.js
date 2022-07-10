@@ -10,7 +10,6 @@
     const back = document.querySelector('.back')
     var deg = 0;
     var ganador = "";
-
     const url = 'http://localhost:3000/user/'
     const contenedor = document.querySelector('tbody')
     let resultados = ''
@@ -25,6 +24,11 @@
     const colorApuesta = document.getElementById('colorApuesta')
     let opcion = ''
     console.log("Iniciando la ruleta :" + ganador)
+
+    // Los jugadores participan de una partida de ruleta automáticamente, cada 3 minutos (a nivel de datos y vista
+    //setInterval("location.reload()",60000);
+
+    //
     //funcion para mostrar los resultados
 
     const mostrar = (articulos) => {
@@ -45,7 +49,7 @@
         
     }
     //   CARGA INICIAL DE DATOS ANTES DE LA RULETA 
-    fetch(url)
+         fetch(url)
         .then(response => response.json())
         .then(data => mostrar(data))
         .catch(error => console.log(error))
@@ -399,6 +403,11 @@
                 CmontoApuesta = Math.round(element2.montoApuesta)
                 CporcentajeApuesta = Math.round(element2.porcentajeApuesta)
                 CcolorApuesta = element2.colorApuesta
+      // Si tienen $1.000 o menos, van All In. Si no les queda dinero, no apuestan. 
+
+                if (Csaldo < 1001) {
+                    CmontoApuesta = Csaldo
+                }
               
 
                 if (element2.colorApuesta == ganador) {
@@ -424,7 +433,7 @@
             }
 
 
-                 fetch(url + idForm, {
+                fetch(url + idForm, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -436,7 +445,7 @@
                 })
             })
                     .then(response => response.json())
-
+                    
 
                 })
    
@@ -444,8 +453,7 @@
 
 }
 
-
-
+ 
 
         // Procedimoiento Borrar
         on(document, 'click', '.btn-Borrar', e => {
