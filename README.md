@@ -73,6 +73,7 @@ Cualquier cosa no especificada queda a criterio del desarrollador.
 
 Deseables (no obligatorias pero consideradas):
 Los jugadores participan de una partida de ruleta automáticamente, cada 3 minutos (a nivel de datos y vista).
+. SE PROGRAMO LA PAGINA QUE AL REFRESCAR SE CORRE UNA NUEVA PARTIDA INICIANDO LA RULETA Y REALIZANDO LOS CALCULOS, CON CADA NUEVA RECARGA SE ACTUALIZAN LOS NUEVOS DATOS DE GANACIAS Y PERDIDAS DE LA PARTIDA EN BASE DE DATOS
 
 
 El sistema puede publicarse en algún servidor de producción y proveer el link para ingresar. Pueden usarse servicios gratuitos como Heroku.  
