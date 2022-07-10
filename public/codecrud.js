@@ -143,8 +143,7 @@ on(document, 'click', '.btnEditar', e => {
                 headers: {
                     'Content-Type': 'application/json'                    
                 },
-               
-                body: JSON.stringify({
+                    body: JSON.stringify({
                     jugador:jugador.value,
                     saldo:saldo.value,
                     porcentajeApuesta:porcentajeApuesta.value,
@@ -157,6 +156,4 @@ on(document, 'click', '.btnEditar', e => {
             .then(response => location.reload())
         modalArticulo.hide()
         }
-    })
-
-
+    })   
