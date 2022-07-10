@@ -78,7 +78,7 @@ Los jugadores participan de una partida de ruleta automáticamente, cada 3 minut
 El sistema puede publicarse en algún servidor de producción y proveer el link para ingresar. Pueden usarse servicios gratuitos como Heroku.  
 .- Despliegue Devops para este Proyecto
 .- Servidor AWS Linux Ubuntu 21.10
-.- Subdominio en produccion http://ruletacasino.demoeventos.digital/
+.- Subdominio en produccion 
 
 
 
@@ -90,7 +90,7 @@ El proyecto de prueba se debe subir a la cuenta personal de Github.
 El sistema debe correr en un sistema UNIX. Las instrucciones de instalación y ejecución deberán ser subidas al readme del repositorio.
 Despliegue Devops para este Proyecto
 .- Servidor AWS Linux Ubuntu 21.10
-.- Subdominio en produccion: http://ruletacasino.demoeventos.digital/
+.- Subdominio en produccion: 
 .- Backend basada en Node.js - Express - Mongodb ( APuntando ATLAS DB CLOUD) - Nginx
 .- Despliegue realizado con PM2 Node.js usando multi núcleos de la instancia AWS
 .- Frontend basado en (HTML5 - CSS -Javacrypts)  con algunas librerías de BOOTSTRAP 5.1
