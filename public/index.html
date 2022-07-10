@@ -85,12 +85,20 @@
               </div>
               <div class="mb-3">
                 <label for="porcentajeApuesta" class="col-form-label">% Apuesta:</label>
-                <input id="porcentajeApuesta" type="number" class="form-control" >
+                <input id="porcentajeApuesta" type="number" class="form-control" min="8" max="15">
               </div>
               <div class="mb-3">
                 <label for="colorApuesta" class="col-form-label">Color Apuesta:</label>
-                <input id = "colorApuesta" type="text" class="form-control">
-              </div>
+                <select id = "colorApuesta" name="colorApuesta">
+
+                  <option>ROJO</option>
+                  
+                  <option>NEGRO</option>
+                  
+                  <option>VERDE</option>
+                  
+                  </select>
+                              </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary">Guardar</button>
@@ -104,8 +112,9 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
   <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-  <script src="codecrud.js"> </script>
+
   <script src="script.js"></script>
+  <script src="codecrud.js"> </script>
   </body>
  
 </html>

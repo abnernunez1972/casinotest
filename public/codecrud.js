@@ -96,8 +96,8 @@ on(document, 'click', '.btnEditar', e => {
     console.log('Estoy feliz pasando sa traspasar datois hacia form')
     jugador.value = nameForm
     saldo.value = saldoForm
-    montoApuesta.value = montoApuestaForm
     porcentajeApuesta.value = porcentajeApuestaForm
+    montoApuesta.value = (saldo.value*porcentajeApuesta.value)/100
     colorApuesta.value = colorApuestaForm
     opcion = 'editar'
     modalArticulo.show()
@@ -120,8 +120,8 @@ on(document, 'click', '.btnEditar', e => {
                 body: JSON.stringify({
                     jugador:jugador.value,
                     saldo:saldo.value,
-                    montoApuesta:montoApuesta.value,
                     porcentajeApuesta:porcentajeApuesta.value,
+                    montoApuesta:saldo.value*porcentajeApuesta.value/100,
                     colorApuesta:colorApuesta.value
 
                 })
@@ -131,7 +131,8 @@ on(document, 'click', '.btnEditar', e => {
                 console.log(data)
                 const nuevoJugador = []
                 nuevoJugador.push(data)
-                mostrar(nuevoJugador)
+                mostrar(nuevoJugador)  
+                 modalArticulo.hide()
 
             })
         }
@@ -146,8 +147,8 @@ on(document, 'click', '.btnEditar', e => {
                 body: JSON.stringify({
                     jugador:jugador.value,
                     saldo:saldo.value,
-                    montoApuesta:montoApuesta.value,
                     porcentajeApuesta:porcentajeApuesta.value,
+                    montoApuesta:saldo.value*porcentajeApuesta.value/100,
                     colorApuesta:colorApuesta.value
 
                 })
