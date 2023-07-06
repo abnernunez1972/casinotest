@@ -10,7 +10,7 @@
     const back = document.querySelector('.back')
     var deg = 0;
     var ganador = "";
-    const url = 'http://localhost:3000/user/'
+    const url = 'https://abnernunez1972-reimagined-umbrella-77v6rxwqq7jcrx7w-3000.preview.app.github.dev/user/'
     const contenedor = document.querySelector('tbody')
     let resultados = ''
     let resultados2 = ''
